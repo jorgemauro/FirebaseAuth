@@ -1,0 +1,15 @@
+page-cadastro {
+    ion-card{
+        display: flex;
+        align-items: center;
+        flex-flow: column;
+        max-width: 80%;
+        margin-left: 9%!important;
+    }
+    ion-item{
+        padding: 2%;
+    }
+    ion-list{
+        margin: 5%!important;
+    }
+}

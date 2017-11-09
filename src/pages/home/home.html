@@ -1,14 +1,32 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
+	<ion-navbar>
+		<ion-title>
+			Auth with Ionic
+		</ion-title>
+	</ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content class="container" padding>
+
+  <h1 id="hello">Hello {{displayName}}</h1>  
+  <div *ngIf="autenticacao" padding>
+    <h3>Você está conectado!</h3>
+  </div>
+  <ion-list>
+    <ion-item>
+      <ion-label fixed>E-mail</ion-label>
+      <ion-input type="text" [(ngModel)]="email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label fixed>Senha</ion-label>
+      <ion-input type="password" [(ngModel)]="senha"></ion-input>
+    </ion-item>
+  </ion-list>
+  <div class="buttons" padding>
+    <button ion-button  color="ligth" (click)="cadastrar()">Cadastrar</button>
+    <button ion-button  (click)="login()"> Login</button>
+		<button ion-button  (click)="logout()"> Logout</button>
+		<button ion-button outline (click)="signInWithFacebook()">Login FaceBook</button>  
+  	<button ion-button outline (click)="signOut()">Logout </button>
+  </div>
 </ion-content>
