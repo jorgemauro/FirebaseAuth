@@ -16,12 +16,7 @@ import { LoginPage } from '../pages/login/login';
 import { CadastroPage } from '../pages/cadastro/cadastro';
 
 var config = {
-  apiKey: "AIzaSyCUggexCPVuqZHSGNfsrLD-5Q1KsKshFXk",
-  authDomain: "appsupplearning.firebaseapp.com",
-  databaseURL: "https://appsupplearning.firebaseio.com",
-  projectId: "appsupplearning",
-  storageBucket: "appsupplearning.appspot.com",
-  messagingSenderId: "45561662800"
+
 };
 
 @NgModule({
